@@ -1,20 +1,16 @@
-#script to get violated info
 import json
-
-#json_data = json.load(open('data.json','r'))
-def json_violate(json_data):
-    interface_list = json_data['network']['devices'][0]['interfaces']
-    for e,x in enumerate(interface_list):
-        value = x['broadcast_percent']
-        if value < 16: # <16
-            interface_list[e]["violation"] = "green"
-        elif value < 30: #>15 and <30
-            interface_list[e]["violation"] = "yellow"
-        else: #>30
-            interface_list[e]["violation"] = "red"
-
-    json_data['network']['devices'][0]['interfaces'] = interface_list
-
-    #writing the new json data to the new file 'data_v.json'
-    with open('data_v.json', 'w') as file:
-        json.dump(json_data, file)
+def json_violate(data):
+    for network in data:
+        for node_list in data[network].items():
+            for devices in  node_list[1::]:
+                for each_device in devices:
+                    for each_interface in each_device['interfaces']:
+                        bp = each_interface['broadcast_percent']
+                        if bp<16:
+                            each_interface['violation']="green"
+                        elif bp<30:
+                            each_interface['violation']="yellow"
+                        else:
+                            each_interface['violation']="red"
+    with open("data_v.json",'w') as outf:
+        json.dump(data,outf,indent=4)

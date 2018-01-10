@@ -1,6 +1,6 @@
 #Main driver file.
 import json
-#import violate,analyse
+import violate,analyse
 def assessment():
     with open('data.json') as json_data:
         data=json.load(json_data)
