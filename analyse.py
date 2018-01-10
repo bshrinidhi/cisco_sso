@@ -21,5 +21,3 @@ def json_analyse():
     #Dump the dictionary into JSON
     with open('data_a.json', 'w') as fp:
         json.dump(data, fp, indent=3)
-
-json_analyse()
