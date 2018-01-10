@@ -13,7 +13,7 @@ def json_analyse(data):
             packet = interface['input_packets']
 
             if packet != 0:
-                interface['broadcast_percent'] = float("{0:.2f}".format(broadcast/packet))
+                interface['broadcast_percent'] = float("{0:.2f}".format((broadcast/packet)*100))
             else:
                 interface['broadcast_percent'] = 0
 
