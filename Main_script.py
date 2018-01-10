@@ -1,5 +1,7 @@
 #Main driver file.
 import json
+import analyse
+import violate
 #import violate,analyse
 def assessment():
     with open('data.json') as json_data:
@@ -11,5 +13,5 @@ def assessment():
     violate.json_violate(data_a)
     with open('data_v.json') as json_data:
         data_v=json.load(json_data)
-        #print(data_v)
+        print(data_v)
 assessment()
