@@ -1,8 +1,8 @@
 import json
 
-def json_analyse():
+def json_analyse(data):
 
-    data = json.load(open('data.json'))
+    #data = json.load(open('data.json'))
     devices = data['network']['devices']
 
     #iterate over the devices list
