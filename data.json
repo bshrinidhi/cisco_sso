@@ -1,0 +1,46 @@
+{
+   "network": {
+      "devices": [
+         {
+            "hostname": "Node113",
+            "interfaces": [
+               {
+                  "broadcasts": 37665,
+                  "input_packets": 96496,
+                  "name": "GigabitEthernet1/45"
+               },
+               {
+                  "broadcasts": 12355,
+                  "input_packets": 89121,
+                  "name": "GigabitEthernet1/46"
+               },
+               {
+                  "broadcasts": 0,
+                  "input_packets": 0,
+                  "name": "GigabitEthernet1/47"
+               },
+               {
+                  "broadcasts": 2121212,
+                  "input_packets": 111234455,
+                  "name": "GigabitEthernet1/48"
+               },
+               {
+                  "broadcasts": 87226,
+                  "input_packets": 98523,
+                  "name": "GigabitEthernet1/49"
+               },
+               {
+                  "broadcasts": 0,
+                  "input_packets": 234,
+                  "name": "GigabitEthernet1/50"
+               },
+               {
+                  "broadcasts": 764365,
+                  "input_packets": 14546789,
+                  "name": "GigabitEthernet1/51"
+               },
+            ]
+         }
+      ]
+   }
+}
