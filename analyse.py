@@ -1,17 +1,25 @@
 import json
 
-data = json.load(open('C:/Users/samalagi/Assignment/cisco_sso/data.json'))
-network = data['network']
-devices = network['devices']
+def json_analyse():
 
-for device in devices:
-    for interface in device['interfaces']:
-        broadcast = interface['broadcasts']
-        packet = interface['input_packets']
-        if packet != 0:
-            interface['broadcast_percent'] = broadcast/packet
+    data = json.load(open('data.json'))
+    devices = data['network']['devices']
 
-print(data)
-with open('data_a.json', 'w') as fp:
-    json.dump(data, fp, indent=4)
+    #iterate over the devices list
+    for device in devices:
+        #process every interface
+        for interface in device['interfaces']:
+            broadcast = interface['broadcasts']
+            packet = interface['input_packets']
 
+            if packet != 0:
+                interface['broadcast_percent'] = float("{0:.2f}".format(broadcast/packet))
+            else:
+                interface['broadcast_percent'] = 0
+
+
+    #Dump the dict into JSON
+    with open('data_a.json', 'w') as fp:
+        json.dump(data, fp, indent=3)
+
+json_analyse()
