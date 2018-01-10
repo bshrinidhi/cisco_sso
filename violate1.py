@@ -2,7 +2,7 @@
 
 import json
 
-def inspect(data):
+def json_violate(data):
   #with open('data_c.json') as json_file:
        # data = json.load(json_file)
         #print(data)
@@ -19,7 +19,7 @@ def inspect(data):
                 p['violation_color']='red'
 
     print(data)
-    with open('data_v.jason','w') as fp:
+    with open('data_v.json','w') as fp:
         json.dump(data,fp,indent=4)
     return
 
