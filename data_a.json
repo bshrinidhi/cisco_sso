@@ -1,52 +1,53 @@
 {
-    "network": {
-        "devices": [
-            {
-                "hostname": "Node113",
-                "interfaces": [
-                    {
-                        "broadcasts": 37665,
-                        "input_packets": 96496,
-                        "name": "GigabitEthernet1/45",
-                        "broadcast_percent": 0.39032706018902336
-                    },
-                    {
-                        "broadcasts": 12355,
-                        "input_packets": 89121,
-                        "name": "GigabitEthernet1/46",
-                        "broadcast_percent": 0.1386317478484308
-                    },
-                    {
-                        "broadcasts": 0,
-                        "input_packets": 0,
-                        "name": "GigabitEthernet1/47"
-                    },
-                    {
-                        "broadcasts": 2121212,
-                        "input_packets": 111234455,
-                        "name": "GigabitEthernet1/48",
-                        "broadcast_percent": 0.019069738778330868
-                    },
-                    {
-                        "broadcasts": 87226,
-                        "input_packets": 98523,
-                        "name": "GigabitEthernet1/49",
-                        "broadcast_percent": 0.8853364189072602
-                    },
-                    {
-                        "broadcasts": 0,
-                        "input_packets": 234,
-                        "name": "GigabitEthernet1/50",
-                        "broadcast_percent": 0.0
-                    },
-                    {
-                        "broadcasts": 764365,
-                        "input_packets": 14546789,
-                        "name": "GigabitEthernet1/51",
-                        "broadcast_percent": 0.052545273049605656
-                    }
-                ]
-            }
-        ]
-    }
+   "network": {
+      "devices": [
+         {
+            "hostname": "Node113",
+            "interfaces": [
+               {
+                  "broadcasts": 37665,
+                  "input_packets": 96496,
+                  "name": "GigabitEthernet1/45",
+                  "broadcast_percent": 0.39
+               },
+               {
+                  "broadcasts": 12355,
+                  "input_packets": 89121,
+                  "name": "GigabitEthernet1/46",
+                  "broadcast_percent": 0.14
+               },
+               {
+                  "broadcasts": 0,
+                  "input_packets": 0,
+                  "name": "GigabitEthernet1/47",
+                  "broadcast_percent": 0
+               },
+               {
+                  "broadcasts": 2121212,
+                  "input_packets": 111234455,
+                  "name": "GigabitEthernet1/48",
+                  "broadcast_percent": 0.02
+               },
+               {
+                  "broadcasts": 87226,
+                  "input_packets": 98523,
+                  "name": "GigabitEthernet1/49",
+                  "broadcast_percent": 0.89
+               },
+               {
+                  "broadcasts": 0,
+                  "input_packets": 234,
+                  "name": "GigabitEthernet1/50",
+                  "broadcast_percent": 0.0
+               },
+               {
+                  "broadcasts": 764365,
+                  "input_packets": 14546789,
+                  "name": "GigabitEthernet1/51",
+                  "broadcast_percent": 0.05
+               }
+            ]
+         }
+      ]
+   }
 }

@@ -18,7 +18,7 @@ def json_analyse():
                 interface['broadcast_percent'] = 0
 
 
-    #Dump the dict into JSON
+    #Dump the dictionary into JSON
     with open('data_a.json', 'w') as fp:
         json.dump(data, fp, indent=3)
 
