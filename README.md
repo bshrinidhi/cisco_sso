@@ -1,3 +1,4 @@
 # cisco_sso
 Testing
-OOta maadkond barona
+
+This is a simple exercise to get familiar with python, json and git.
