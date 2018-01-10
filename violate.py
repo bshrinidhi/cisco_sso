@@ -17,4 +17,4 @@ def json_violate(json_data):
 
     #writing the new json data to the new file 'data_v.json'
     with open('data_v.json', 'w') as file:
-        json.dump(json_data, file)
+        json.dump(json_data, file,indent=3)
