@@ -38,7 +38,7 @@
                   "broadcasts": 764365,
                   "input_packets": 14546789,
                   "name": "GigabitEthernet1/51"
-               },
+               }
             ]
          }
       ]
